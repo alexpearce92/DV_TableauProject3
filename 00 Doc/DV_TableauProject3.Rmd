@@ -1,0 +1,17 @@
+---
+output: html_document
+---
+Elements Of Data Visualization: Tableau Project 3
+===
+__By Alex Cortez, Adam Hernandez, and Alex Pearce__
+
+__GitHub__: https://github.com/alexpearce92/DV_TableauProject3.git
+
+In this project, we utilize R and Tableau to generate various Crosstabs using ???
+
+##First we will load up the necessary packages
+
+```{r message=F}
+source("../00 Doc/load_packages.R",echo=TRUE)
+```
+
