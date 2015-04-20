@@ -27,14 +27,14 @@ In this project, we utilize Tableau to blend two tables from Enigma. Our [first 
 
 ### Blend 3
 
-####Description
+####In this chart we compare household income below and above the poverty line for each state. The width of each bar represents the number of households that have children and the color represents the number of households with less than high school education. It appears that California and Texas the most poor, most wealthy, and most children.
 
-<!--![](./example.png)-->
+![](./Blend3.png)
 
 ***
 
 ### Blend 4
 
-####Description
+####This chart looks at a selected number of states and compares housholds with high school graduates and those with college graduates. The color of each bar shows the percent number of housholds below the poverty line. We see that while Hawaii has few graduates from high school and college, they also have a very low poverty rate. 
 
-<!--![](./example.png)-->
+![](./Blend4.png)
