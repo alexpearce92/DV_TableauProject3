@@ -38,3 +38,7 @@ In this project, we utilize Tableau to blend two tables from Enigma. Our [first 
 ####This chart looks at a selected number of states and compares housholds with high school graduates and those with college graduates. The color of each bar shows the percent number of housholds below the poverty line. We see that while Hawaii has few graduates from high school and college, they also have a very low poverty rate. 
 
 ![](./Blend4.png)
+
+Here is the calculation we used
+
+![](./Blend4Calc.png)
