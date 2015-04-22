@@ -39,6 +39,6 @@ In this project, we utilize Tableau to blend two tables from Enigma. Our [first 
 
 ![](./Blend4.png)
 
-Here is the calculation we used
+Here is the table calculation we used for the measure Percent Below Poverty:
 
 ![](./Blend4Calc.png)
