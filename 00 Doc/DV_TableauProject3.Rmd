@@ -7,7 +7,7 @@ __By Alex Cortez, Adam Hernandez, and Alex Pearce__
 
 __GitHub__: https://github.com/alexpearce92/DV_TableauProject3.git
 
-In this project, we utilize Tableau to blend two tables from Enigma. Our [first table](https://app.enigma.io/table/us.gov.census.acs.2007.1yr.children-relationship.household-type-including-living-alone-by-relationship?row=0&col=0&page=1) is contains information about different types of housholds across the US. Our [second table](https://app.enigma.io/table/us.gov.census.acs.2007.1yr.educational-attainment.poverty-status-by-sex-by-educational-attainment?row=0&col=12&page=1&documentView=false)has data concerning education level and the poverty level in the US.
+In this project, we utilize Tableau to blend two tables from Enigma. Our [first table](https://app.enigma.io/table/us.gov.census.acs.2007.1yr.children-relationship.household-type-including-living-alone-by-relationship?row=0&col=0&page=1) is contains information about different types of housholds across the US. Our [second table](https://app.enigma.io/table/us.gov.census.acs.2007.1yr.educational-attainment.poverty-status-by-sex-by-educational-attainment?row=0&col=12&page=1&documentView=false)has data concerning education level and the poverty level in the US. These two tables were joined over GeographicID.
 
 ###Blend 1
 
