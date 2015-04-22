@@ -11,9 +11,9 @@ In this project, we utilize Tableau to blend two tables from Enigma. Our [first 
 
 ###Blend 1
 
-####Description
+####With this first visualization we look at households for each state in the US. Each state is represented by a circle. The size of the circle is scaled by the number of foster children in households in each state. The color represents the number of nonrelatives in households for each state. Finally, the larger states have two numbers associated with them: the top number gives the income above the poverty level for households and the bottom number gives the income below the poverty level for each state. 
 
-<!--![](./example.png)-->
+![](./Blend1.png)
 
 ***
 
