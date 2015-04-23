@@ -35,10 +35,14 @@ In this project, we utilize Tableau to blend two tables from Enigma. Our [first 
 
 ### Blend 4
 
-####This chart looks at a selected number of states and compares housholds with high school graduates and those with college graduates. The color of each bar shows the percent number of housholds below the poverty line. We see that while Hawaii has few graduates from high school and college, they also have a very low poverty rate. 
+####This chart looks at a selected number of states (TX, CA, WA, NY) and ranks them in a box-whisker plot based on the percent of the homes that live below the poverty line (calculation below). The color refers to the percent homes that contain males, red being more homes with males (calculation below). The size of the points refer to the number of homes with children. From this, we can see that Texas has the most male homes, many children, and also have the most below the poverty line. California has a population comparable to that of Texas. It has fewer male families, the most children, but has fewer poor. Alternatively, New York has the fewest male families, fewer children then the other two, but a higher poverty rate than California. Washington has the lowest population and the fewest poor.
 
 ![](./Blend4.png)
 
 Here is the table calculation we used for the measure Percent Below Poverty:
 
-![](./Blend4Calc.png)
+![](./Blend4Calc1.png)
+
+Here is the table calculation we used for the measure Percent Male:
+
+![](./Blend4Calc2.png)
