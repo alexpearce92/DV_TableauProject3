@@ -19,9 +19,13 @@ In this project, we utilize Tableau to blend two tables from Enigma. Our [first 
 
 ### Blend 2
 
-####This is a simple blend to display the distribution of education attainment across all households.
+####Here we take a look at several cities in Texas. The size of the squares represents the number of homeowners in each city while the color represents the percent below the poverty line, the darker the shade, the greater the poverty. Each square is labeled with the city name and the total number of citizens that are below the poverty line. We see that El Paso has relatively few homeowners but the highest poverty rate while Houston, with the most homeowners, has a much lower poverty rate.
 
-![](./blend2.png)
+![](./Blend2.png)
+
+Here is the table calculation we used for the measure Percent Below Poverty:
+
+![](./Blend4Calc1.png)
 
 ***
 
@@ -39,7 +43,7 @@ In this project, we utilize Tableau to blend two tables from Enigma. Our [first 
 
 ![](./Blend4.png)
 
-Here is the table calculation we used for the measure Percent Below Poverty:
+Once again, here is the table calculation we used for the measure Percent Below Poverty:
 
 ![](./Blend4Calc1.png)
 

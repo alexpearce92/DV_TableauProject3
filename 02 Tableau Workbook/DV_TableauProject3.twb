@@ -5,6 +5,635 @@
   <preferences>
   </preferences>
   <datasources>
+    <datasource caption='POVERTYSTATUS (C##CS329E_AIP256)' inline='true' name='oracle.42113.757249745400' version='8.3'>
+      <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS329E_AIP256' server='129.152.144.84' service='ORCL.usuniversi01134.oraclecloud.internal' username='C##cs329e_aip256'>
+        <relation name='POVERTYSTATUS' table='[C##CS329E_AIP256].[POVERTYSTATUS]' type='table' />
+        <refresh increment-key='' incremental-updates='false'>
+        </refresh>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>SERIALID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SERIALID]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>SERIALID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PLACENAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PLACENAME]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>PLACENAME</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUMMARYLEVEL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUMMARYLEVEL]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>SUMMARYLEVEL</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEOGRAPHICID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GEOGRAPHICID]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>GEOGRAPHICID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[TOTAL]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>TOTAL</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIGHSCHOOLGRADUATES</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[HIGHSCHOOLGRADUATES]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>HIGHSCHOOLGRADUATES</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOMECOLLEGEORASSOCIATES</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[SOMECOLLEGEORASSOCIATES]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>SOMECOLLEGEORASSOCIATES</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BACHELORS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BACHELORS]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>BACHELORS</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GRADUATE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[GRADUATE]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>GRADUATE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LESSTHANHIGHSCHOOL</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LESSTHANHIGHSCHOOL]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>LESSTHANHIGHSCHOOL</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INCOMEBELOWPOVERTYLEVEL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[INCOMEBELOWPOVERTYLEVEL]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>INCOMEBELOWPOVERTYLEVEL</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INCOMEABOVEPOVERTYLEVEL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[INCOMEABOVEPOVERTYLEVEL]</local-name>
+            <parent-name>[POVERTYSTATUS]</parent-name>
+            <remote-alias>INCOMEABOVEPOVERTYLEVEL</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bachelors' datatype='real' name='[BACHELORS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Geographicid' datatype='string' name='[GEOGRAPHICID]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Graduate' datatype='real' name='[GRADUATE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Highschoolgraduates' datatype='real' name='[HIGHSCHOOLGRADUATES]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Incomeabovepovertylevel' datatype='real' name='[INCOMEABOVEPOVERTYLEVEL]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Incomebelowpovertylevel' datatype='real' name='[INCOMEBELOWPOVERTYLEVEL]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Lessthanhighschool' datatype='real' name='[LESSTHANHIGHSCHOOL]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Placename' datatype='string' name='[PLACENAME]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Serialid' datatype='string' name='[SERIALID]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Somecollegeorassociates' datatype='real' name='[SOMECOLLEGEORASSOCIATES]' role='measure' type='quantitative'>
+      </column>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+      </column>
+      <column caption='Summarylevel' datatype='string' name='[SUMMARYLEVEL]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Total' datatype='real' name='[TOTAL]' role='measure' type='quantitative'>
+      </column>
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/Alex/Documents/My Tableau Repository/Datasources/POVERTYSTATUS (C##CS329E_AIP256).tde' schema='Extract' tablename='Extract' update-time='04/23/2015 10:29:01 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='7256' timestamp-start='2015-04-23 22:29:01.320' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>BACHELORS</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[BACHELORS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BACHELORS</remote-alias>
+              <ordinal>0</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2800</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1327918.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GEOGRAPHICID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GEOGRAPHICID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GEOGRAPHICID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7256</approx-count>
+              <scale>1</scale>
+              <width>500</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;01000US&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;97000US7200030&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2000</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GRADUATE</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[GRADUATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GRADUATE</remote-alias>
+              <ordinal>2</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1925</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>562527.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HIGHSCHOOLGRADUATES</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[HIGHSCHOOLGRADUATES]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HIGHSCHOOLGRADUATES</remote-alias>
+              <ordinal>3</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4623</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>6588614.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>INCOMEABOVEPOVERTYLEVEL</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[INCOMEABOVEPOVERTYLEVEL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>INCOMEABOVEPOVERTYLEVEL</remote-alias>
+              <ordinal>4</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5854</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>19721.0</statistic>
+                <statistic aggregation='Max' datatype='real'>174909731.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>INCOMEBELOWPOVERTYLEVEL</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[INCOMEBELOWPOVERTYLEVEL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>INCOMEBELOWPOVERTYLEVEL</remote-alias>
+              <ordinal>5</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5338</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>484.0</statistic>
+                <statistic aggregation='Max' datatype='real'>19285117.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LESSTHANHIGHSCHOOL</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[LESSTHANHIGHSCHOOL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LESSTHANHIGHSCHOOL</remote-alias>
+              <ordinal>6</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4609</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>6815218.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>7</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PLACENAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PLACENAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PLACENAME</remote-alias>
+              <ordinal>8</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7242</approx-count>
+              <scale>1</scale>
+              <width>500</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;ABC UNIFIED , California&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Zephyrhills, FL Urbanized Area&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2000</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SERIALID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SERIALID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SERIALID</remote-alias>
+              <ordinal>9</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7256</approx-count>
+              <scale>1</scale>
+              <width>500</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;1&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;999&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2000</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SOMECOLLEGEORASSOCIATES</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[SOMECOLLEGEORASSOCIATES]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SOMECOLLEGEORASSOCIATES</remote-alias>
+              <ordinal>10</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4090</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>3990840.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STATE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STATE</remote-alias>
+              <ordinal>11</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>53</approx-count>
+              <scale>1</scale>
+              <width>500</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;AK&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;WY&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2000</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SUMMARYLEVEL</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SUMMARYLEVEL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SUMMARYLEVEL</remote-alias>
+              <ordinal>12</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <scale>1</scale>
+              <width>500</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;10&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;970&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2000</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TOTAL</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TOTAL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TOTAL</remote-alias>
+              <ordinal>13</ordinal>
+              <family>POVERTYSTATUS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5829</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>21532.0</statistic>
+                <statistic aggregation='Max' datatype='real'>194194848.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
     <datasource caption='HOUSEHOLDS (C##CS329E_AIP256)' inline='true' name='DEPT (C##CS329E_AIP256)' version='8.3'>
       <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS329E_AIP256' server='129.152.144.84' service='orcl.usuniversi01134.oraclecloud.internal' username='C##cs329e_aip256'>
         <relation name='HOUSEHOLDS' table='[C##CS329E_AIP256].[HOUSEHOLDS]' type='table' />
@@ -483,6 +1112,8 @@
       </column>
       <column caption='Unmarriedpartner' datatype='real' name='[UNMARRIEDPARTNER]' role='measure' type='quantitative'>
       </column>
+      <column-instance column='[ROOMMATE]' derivation='Sum' name='[sum:ROOMMATE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_8150419195140161]' derivation='User' name='[usr:Calculation_8150419195140161:qk]' pivot='key' type='quantitative' />
       <extract count='-1' enabled='true' units='records'>
         <connection class='dataengine' dbname='/Users/Alex/Documents/My Tableau Repository/Datasources/HOUSEHOLDS (C##CS329E_AIP256).tde' schema='Extract' tablename='Extract' update-time='04/23/2015 10:28:45 PM'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
@@ -1114,6 +1745,21 @@
         </connection>
       </extract>
       <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[DEPT (C\#\#CS329E_AIP256)].[usr:Calculation_8150419195140161:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[DEPT (C\#\#CS329E_AIP256)].[sum:ROOMMATE:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[oracle.42113.757249745400].[sum:INCOMEABOVEPOVERTYLEVEL:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -1122,636 +1768,8 @@
         </column>
         <column caption='Incomebelowpovertylevel' datatype='real' name='[INCOMEBELOWPOVERTYLEVEL]' role='measure' type='quantitative'>
         </column>
+        <column-instance column='[INCOMEABOVEPOVERTYLEVEL]' derivation='Sum' name='[sum:INCOMEABOVEPOVERTYLEVEL:qk]' pivot='key' type='quantitative' />
       </datasource-dependencies>
-    </datasource>
-    <datasource caption='POVERTYSTATUS (C##CS329E_AIP256)' inline='true' name='oracle.42113.757249745400' version='8.3'>
-      <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS329E_AIP256' server='129.152.144.84' service='ORCL.usuniversi01134.oraclecloud.internal' username='C##cs329e_aip256'>
-        <relation name='POVERTYSTATUS' table='[C##CS329E_AIP256].[POVERTYSTATUS]' type='table' />
-        <refresh increment-key='' incremental-updates='false'>
-        </refresh>
-        <metadata-records>
-          <metadata-record class='column'>
-            <remote-name>SERIALID</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[SERIALID]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>SERIALID</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>0</scale>
-            <width>500</width>
-            <contains-null>true</contains-null>
-            <padded-semantics>true</padded-semantics>
-            <collation charset='1' flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>PLACENAME</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[PLACENAME]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>PLACENAME</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>0</scale>
-            <width>500</width>
-            <contains-null>true</contains-null>
-            <padded-semantics>true</padded-semantics>
-            <collation charset='1' flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>SUMMARYLEVEL</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[SUMMARYLEVEL]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>SUMMARYLEVEL</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>0</scale>
-            <width>500</width>
-            <contains-null>true</contains-null>
-            <padded-semantics>true</padded-semantics>
-            <collation charset='1' flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>STATE</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[STATE]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>STATE</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>0</scale>
-            <width>500</width>
-            <contains-null>true</contains-null>
-            <padded-semantics>true</padded-semantics>
-            <collation charset='1' flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>GEOGRAPHICID</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[GEOGRAPHICID]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>GEOGRAPHICID</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>0</scale>
-            <width>500</width>
-            <contains-null>true</contains-null>
-            <padded-semantics>true</padded-semantics>
-            <collation charset='1' flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>TOTAL</remote-name>
-            <remote-type>131</remote-type>
-            <local-name>[TOTAL]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>TOTAL</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>38</precision>
-            <scale>0</scale>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>HIGHSCHOOLGRADUATES</remote-name>
-            <remote-type>131</remote-type>
-            <local-name>[HIGHSCHOOLGRADUATES]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>HIGHSCHOOLGRADUATES</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>38</precision>
-            <scale>0</scale>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>SOMECOLLEGEORASSOCIATES</remote-name>
-            <remote-type>131</remote-type>
-            <local-name>[SOMECOLLEGEORASSOCIATES]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>SOMECOLLEGEORASSOCIATES</remote-alias>
-            <ordinal>9</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>38</precision>
-            <scale>0</scale>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>BACHELORS</remote-name>
-            <remote-type>131</remote-type>
-            <local-name>[BACHELORS]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>BACHELORS</remote-alias>
-            <ordinal>10</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>38</precision>
-            <scale>0</scale>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>GRADUATE</remote-name>
-            <remote-type>131</remote-type>
-            <local-name>[GRADUATE]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>GRADUATE</remote-alias>
-            <ordinal>11</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>38</precision>
-            <scale>0</scale>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>LESSTHANHIGHSCHOOL</remote-name>
-            <remote-type>131</remote-type>
-            <local-name>[LESSTHANHIGHSCHOOL]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>LESSTHANHIGHSCHOOL</remote-alias>
-            <ordinal>12</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>38</precision>
-            <scale>0</scale>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>INCOMEBELOWPOVERTYLEVEL</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[INCOMEBELOWPOVERTYLEVEL]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>INCOMEBELOWPOVERTYLEVEL</remote-alias>
-            <ordinal>13</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>126</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>INCOMEABOVEPOVERTYLEVEL</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[INCOMEABOVEPOVERTYLEVEL]</local-name>
-            <parent-name>[POVERTYSTATUS]</parent-name>
-            <remote-alias>INCOMEABOVEPOVERTYLEVEL</remote-alias>
-            <ordinal>14</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>126</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
-            </attributes>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Bachelors' datatype='real' name='[BACHELORS]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Geographicid' datatype='string' name='[GEOGRAPHICID]' role='dimension' type='nominal'>
-      </column>
-      <column caption='Graduate' datatype='real' name='[GRADUATE]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Highschoolgraduates' datatype='real' name='[HIGHSCHOOLGRADUATES]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Incomeabovepovertylevel' datatype='real' name='[INCOMEABOVEPOVERTYLEVEL]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Incomebelowpovertylevel' datatype='real' name='[INCOMEBELOWPOVERTYLEVEL]' role='measure' type='quantitative'>
-      </column>
-      <column caption='Lessthanhighschool' datatype='real' name='[LESSTHANHIGHSCHOOL]' role='measure' type='quantitative'>
-      </column>
-      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
-        <calculation class='tableau' formula='1' />
-      </column>
-      <column caption='Placename' datatype='string' name='[PLACENAME]' role='dimension' type='nominal'>
-      </column>
-      <column caption='Serialid' datatype='string' name='[SERIALID]' role='dimension' type='nominal'>
-      </column>
-      <column caption='Somecollegeorassociates' datatype='real' name='[SOMECOLLEGEORASSOCIATES]' role='measure' type='quantitative'>
-      </column>
-      <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
-      </column>
-      <column caption='Summarylevel' datatype='string' name='[SUMMARYLEVEL]' role='dimension' type='nominal'>
-      </column>
-      <column caption='Total' datatype='real' name='[TOTAL]' role='measure' type='quantitative'>
-      </column>
-      <extract count='-1' enabled='true' units='records'>
-        <connection class='dataengine' dbname='/Users/Alex/Documents/My Tableau Repository/Datasources/POVERTYSTATUS (C##CS329E_AIP256).tde' schema='Extract' tablename='Extract' update-time='04/23/2015 10:29:01 PM'>
-          <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <calculations>
-            <calculation column='[Number of Records]' formula='1' />
-          </calculations>
-          <refresh increment-key='' incremental-updates='false'>
-            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='7256' timestamp-start='2015-04-23 22:29:01.320' />
-          </refresh>
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>BACHELORS</remote-name>
-              <remote-type>4</remote-type>
-              <local-name>[BACHELORS]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>BACHELORS</remote-alias>
-              <ordinal>0</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>2800</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='real'>0.0</statistic>
-                <statistic aggregation='Max' datatype='real'>1327918.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>GEOGRAPHICID</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[GEOGRAPHICID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>GEOGRAPHICID</remote-alias>
-              <ordinal>1</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>7256</approx-count>
-              <scale>1</scale>
-              <width>500</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;01000US&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;97000US7200030&quot;</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2000</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>GRADUATE</remote-name>
-              <remote-type>4</remote-type>
-              <local-name>[GRADUATE]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>GRADUATE</remote-alias>
-              <ordinal>2</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1925</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='real'>0.0</statistic>
-                <statistic aggregation='Max' datatype='real'>562527.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>HIGHSCHOOLGRADUATES</remote-name>
-              <remote-type>4</remote-type>
-              <local-name>[HIGHSCHOOLGRADUATES]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>HIGHSCHOOLGRADUATES</remote-alias>
-              <ordinal>3</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>4623</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='real'>0.0</statistic>
-                <statistic aggregation='Max' datatype='real'>6588614.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>INCOMEABOVEPOVERTYLEVEL</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[INCOMEABOVEPOVERTYLEVEL]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>INCOMEABOVEPOVERTYLEVEL</remote-alias>
-              <ordinal>4</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>5854</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='real'>19721.0</statistic>
-                <statistic aggregation='Max' datatype='real'>174909731.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>INCOMEBELOWPOVERTYLEVEL</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[INCOMEBELOWPOVERTYLEVEL]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>INCOMEBELOWPOVERTYLEVEL</remote-alias>
-              <ordinal>5</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>5338</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='real'>484.0</statistic>
-                <statistic aggregation='Max' datatype='real'>19285117.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>LESSTHANHIGHSCHOOL</remote-name>
-              <remote-type>4</remote-type>
-              <local-name>[LESSTHANHIGHSCHOOL]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>LESSTHANHIGHSCHOOL</remote-alias>
-              <ordinal>6</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>4609</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='real'>0.0</statistic>
-                <statistic aggregation='Max' datatype='real'>6815218.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Number of Records</remote-name>
-              <remote-type>16</remote-type>
-              <local-name>[Number of Records]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Number of Records</remote-alias>
-              <ordinal>7</ordinal>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='integer'>1</statistic>
-                <statistic aggregation='Max' datatype='integer'>1</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>PLACENAME</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[PLACENAME]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>PLACENAME</remote-alias>
-              <ordinal>8</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>7242</approx-count>
-              <scale>1</scale>
-              <width>500</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;ABC UNIFIED , California&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;Zephyrhills, FL Urbanized Area&quot;</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2000</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>SERIALID</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[SERIALID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>SERIALID</remote-alias>
-              <ordinal>9</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>7256</approx-count>
-              <scale>1</scale>
-              <width>500</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;1&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;999&quot;</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2000</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>SOMECOLLEGEORASSOCIATES</remote-name>
-              <remote-type>4</remote-type>
-              <local-name>[SOMECOLLEGEORASSOCIATES]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>SOMECOLLEGEORASSOCIATES</remote-alias>
-              <ordinal>10</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>4090</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='real'>0.0</statistic>
-                <statistic aggregation='Max' datatype='real'>3990840.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>STATE</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[STATE]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>STATE</remote-alias>
-              <ordinal>11</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>53</approx-count>
-              <scale>1</scale>
-              <width>500</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;AK&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;WY&quot;</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2000</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>SUMMARYLEVEL</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[SUMMARYLEVEL]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>SUMMARYLEVEL</remote-alias>
-              <ordinal>12</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>23</approx-count>
-              <scale>1</scale>
-              <width>500</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;10&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;970&quot;</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2000</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>TOTAL</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[TOTAL]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>TOTAL</remote-alias>
-              <ordinal>13</ordinal>
-              <family>POVERTYSTATUS</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>5829</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='real'>21532.0</statistic>
-                <statistic aggregation='Max' datatype='real'>194194848.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
-              </attributes>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
     </datasource>
   </datasources>
   <datasource-relationships>
@@ -1776,7 +1794,50 @@
       <table>
         <view>
           <datasources>
+            <datasource caption='HOUSEHOLDS (C##CS329E_AIP256)' name='DEPT (C##CS329E_AIP256)' />
+            <datasource caption='POVERTYSTATUS (C##CS329E_AIP256)' name='oracle.42113.757249745400' />
           </datasources>
+          <datasource-dependencies datasource='DEPT (C##CS329E_AIP256)'>
+            <column caption='Percent Below Poverty' datatype='real' name='[Calculation_8150419195140161]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='zn(SUM([oracle.42113.757249745400].[INCOMEBELOWPOVERTYLEVEL]))/(zn(SUM([oracle.42113.757249745400].[INCOMEABOVEPOVERTYLEVEL]))+zn(SUM([oracle.42113.757249745400].[INCOMEBELOWPOVERTYLEVEL])))' scope-isolation='false' />
+            </column>
+            <column caption='Householder' datatype='real' name='[HOUSEHOLDER]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[HOUSEHOLDER]' derivation='Sum' name='[sum:HOUSEHOLDER:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_8150419195140161]' derivation='User' name='[usr:Calculation_8150419195140161:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='oracle.42113.757249745400'>
+            <column caption='Geographicid' datatype='string' name='[GEOGRAPHICID]' role='dimension' type='nominal'>
+            </column>
+            <column caption='Incomebelowpovertylevel' datatype='real' name='[INCOMEBELOWPOVERTYLEVEL]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Placename' datatype='string' name='[PLACENAME]' role='dimension' type='nominal'>
+            </column>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+            </column>
+            <column-instance column='[PLACENAME]' derivation='None' name='[none:PLACENAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[INCOMEBELOWPOVERTYLEVEL]' derivation='Sum' name='[sum:INCOMEBELOWPOVERTYLEVEL:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[oracle.42113.757249745400].[none:PLACENAME:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:PLACENAME:nk]' member='&quot;Amarillo city, Texas&quot;' />
+              <groupfilter function='member' level='[none:PLACENAME:nk]' member='&quot;Austin city, Texas&quot;' />
+              <groupfilter function='member' level='[none:PLACENAME:nk]' member='&quot;Dallas city, Texas&quot;' />
+              <groupfilter function='member' level='[none:PLACENAME:nk]' member='&quot;El Paso city, Texas&quot;' />
+              <groupfilter function='member' level='[none:PLACENAME:nk]' member='&quot;Galveston County, Texas&quot;' />
+              <groupfilter function='member' level='[none:PLACENAME:nk]' member='&quot;Houston city, Texas&quot;' />
+              <groupfilter function='member' level='[none:PLACENAME:nk]' member='&quot;Lubbock city, Texas&quot;' />
+              <groupfilter function='member' level='[none:PLACENAME:nk]' member='&quot;San Antonio city, Texas&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[oracle.42113.757249745400].[none:STATE:nk]'>
+            <groupfilter function='member' level='[none:STATE:nk]' member='&quot;TX&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[oracle.42113.757249745400].[none:STATE:nk]</column>
+            <column>[oracle.42113.757249745400].[none:PLACENAME:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -1784,13 +1845,35 @@
         <panes>
           <pane>
             <view>
-              <breakdown value='auto' />
+              <breakdown value='on' />
             </view>
             <mark class='Automatic' />
+            <encodings>
+              <color column='[DEPT (C##CS329E_AIP256)].[usr:Calculation_8150419195140161:qk]' />
+              <size column='[DEPT (C##CS329E_AIP256)].[sum:HOUSEHOLDER:qk]' />
+              <text column='[oracle.42113.757249745400].[none:PLACENAME:nk]' />
+              <text column='[oracle.42113.757249745400].[sum:INCOMEBELOWPOVERTYLEVEL:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
         <rows></rows>
         <cols></cols>
+        <join-lod-include-overrides>
+          <column>[oracle.42113.757249745400].[GEOGRAPHICID]</column>
+        </join-lod-include-overrides>
       </table>
     </worksheet>
     <worksheet name='Cortez - Blend 1'>
@@ -2107,14 +2190,17 @@
           <field>[DEPT (C##CS329E_AIP256)].[sum:NONRELATIVES:qk]</field>
         </color-one-way>
       </highlight>
+      <viewpoint>
+      </viewpoint>
     </window>
-    <window auto-hidden='0' class='worksheet' maximized='0' name='Adam - Blend 2'>
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Adam - Blend 2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
+            <card pane-specification-id='0' param='[DEPT (C##CS329E_AIP256)].[usr:Calculation_8150419195140161:qk]' type='color' />
           </strip>
         </edge>
         <edge name='top'>
@@ -2126,8 +2212,14 @@
           </strip>
         </edge>
       </cards>
-      <viewpoint>
-      </viewpoint>
+      <highlight>
+        <color-one-way>
+          <field>[DEPT (C##CS329E_AIP256)].[:Measure Names]</field>
+          <field>[DEPT (C##CS329E_AIP256)].[none:STATE:nk]</field>
+          <field>[DEPT (C##CS329E_AIP256)].[usr:Calculation_8150419195140161:qk]</field>
+          <field>[oracle.42113.757249745400].[none:STATE:nk]</field>
+        </color-one-way>
+      </highlight>
     </window>
     <window auto-hidden='0' class='worksheet' maximized='0' name='Pearce - Blend 3'>
       <cards>
@@ -2157,8 +2249,10 @@
           <field>[oracle.42113.757249745400].[none:STATE:nk]</field>
         </color-one-way>
       </highlight>
+      <viewpoint>
+      </viewpoint>
     </window>
-    <window auto-hidden='0' class='worksheet' maximized='1' name='Pearce - Blend 4'>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Pearce - Blend 4'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3456,28 +3550,131 @@
       ux2CJFUVuQA4LOSN0p26x+0wbnnJQJq2mm63w5CkqiIXgArY0/CgvApYp/7s12STcEkqM/mN
       qoCIz+DO9EG3w7hlpcPNcu+/JDngfzVZnzGBiOXDAAAAAElFTkSuQmCC
     </thumbnail>
-    <thumbnail height='288' name='Adam - Blend 2' width='348'>
-      iVBORw0KGgoAAAANSUhEUgAAAVwAAAEgCAYAAAD49suWAAAACXBIWXMAAA7DAAAOwwHHb6hk
-      AAAD60lEQVR4nO3UMQHAIBDAwFL/nh8VhIE7BZmyZmY+AI77bwcAvMJwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJE
-      DBcgYrgAEcMFiBguQMRwASKGCxAxXICI4QJEDBcgYrgAkQ3yPAY8hWYIbwAAAABJRU5ErkJg
-      gg==
+    <thumbnail height='384' name='Adam - Blend 2' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAAsTAAALEwEAmpwY
+      AAAZt0lEQVR4nO3daZBd5WGg4ffcpfdVre5Wt/YNSUhCSAJjMDaL4wVPxQuBzNieciXOOBkn
+      FVd+ZMZVMzU2k6QqNRlnpqacGafsSYrxFmI74GHABhuDEVgsQhJCrX2XultS79vtvus586MB
+      QwBblCU1+HufX7d0zz3n66Oq7733nO92R0mSJEiSgpOa6wFIkuaGAZCkQBkASQqUAZCkQBkA
+      SQqUAZCkQBkASQqUAZCkQBkASQqUAZCkQBkASQqUAZCkQBkASQqUAZCkQBkASQqUAZCkQBkA
+      SQqUAZCkQBkASQqUAZCkQBkASQqUAZCkQGUu9wGTJCFJkst9WEnSPzMnAZiYmKC6uvpyH1qS
+      9AqXPQAA1dXVpFIpRkdH5+LwkiTmKAAAIyMjfHPn/ySfmpqrIUjSRRUR0Zzv5lx0eq6HckHm
+      LAAAM6kJpqJRyqWEbHWaUr5MpjpNFEW/8HUv3UP4Zdu95KX9vtFr4nKFwnSZFzegpiF7wfuW
+      pJdESYqaqJUJhinmSiRJQqYmQyabfnmbJEkoFyoAZGsubAouF8qksmkiIEq98RwWAUQR1Rc4
+      h835KqBc3wjP3n8CgD33PM9MIaE0U6JcqpDEMXGcEFdikjihOF2iUoo58fRJzvfnqZQqFGdm
+      T3KlHFPIlUji2TgkyUv7iTm1q5+Bnl5OHxqlUolJkoS4HL88hpmhCXbff4DvffGn9PzkOJVK
+      QiFXJI4TKqXKy/ufPcmzxysXyxTzZW9oS3qtOOFHX3qCnoeP8KP/8iSjw3kqxfLsfFUqs/Of
+      enj6nn0vzmtFKuWfz3HxK+awcqFMuVhh8MB5xs6O0/Pk2dltX5yTXlIYnaLnoUPc/xfb2P/Y
+      ccoVXt7XG81hcbkyt58AAIigt6ef57JFeo+O0rzrNMd3D1HK5bnq5m4maYDhYcqpLGcPD5Ot
+      qaY2nSc9GrNzbz8NTVW0b1xIz8MH6VjUSOPSTrZ+cBl9u8+w/6kBysUyNXVVtM6PGM8Nc+SJ
+      01z9rnZ6zydcfcsiAOoXtHLdHfVMTyRc+9E17PiHPUwXoUxEVX6GVF01NfObGT18jmxthqYl
+      8zmzs4+6piq2fuJqWtu8oS3p1Ro6Wrjmjg2MHOrjyM/OMH58mFQq5or3ryFKAUTs+3/7yBVg
+      cqRIV3eG8YmE2nmNbP7QCnJ9Izx17zFIKrR21tA41sipngmGDvRx/Z1r2f2Tfq6/cw0Ate3N
+      bP3oOnKjFbZ8eA177tvH1ExMuQy1SRGqq8g0NzB1apBsXYa6rjZGD/XN/ScAgM5V7Vx5ywo6
+      lzQxeGSIaz+xidWb2xntnyFJgAQa2ptIE1POl2le1kZ7dx2tq7u54VMbGT4xRNuSdm785EYo
+      TAMweGyId3zyam7+nU1EJHQub2HZdUupjoo8v+0sq65d8IbjGTgyRF1jFekKrH/fcvb8+Azr
+      blxIti5LkkA+V6BjYT35fIniTPkynSVJb0el6RJRBNm6DFGckM8VXn4uW5elUoopTudpWzaf
+      /MQM5eLs5aGB46Os/cBa3vPpzVRloHVpKwuv7KS9o4ad9x5m+fWL3vCYg0eGqGuoIp0krH3v
+      cvb++BRrb1w0O4fFkJ8q0L583twHIEpFVNdXU9dcQ3Vdlq4NnTx99y6O7hlm4VWdHHnkIId3
+      9JMbmaIUpyiXilRVpejbP8rkibM8/vd76FzbSTqbglREumr2R1qwrpOn7t7J41/fSyqTJlOd
+      5fD2PlZf08XUDNRmKrzwyIlXjSX14nW67nUdTAxMUy7H7H7wGB/47Caeve8QE0MzECfkp0qM
+      DOTIpiOKL17Lk6SXRZAbHGXb/97JC0+eY8W6FnKTJUhBcTomnUmRyqQY7Z8kFUGpCCO9Y2Tr
+      q8nPzAZiweo2Dj68n21//zzlJEUqk6H/uV6Wv2sxZ09M0dFdywsPH33VMdMvzmFdV3YwOTBN
+      uZTwwg+P8t7PXs3O+w8xMThNEieUihWGeieIkst8ETuOYwqFAmNjY3xt91+SS4+/dptKTJSK
+      iKLodR8DkAARJHFCKv36HXvla2H2uv/Tdz9H1w1XsHR1Iyf3DrFiy+t9EkiolBNS6ehVN1KS
+      SgxRRJSKSOKEJIFU2pvFkmZFSYr5M8s5HR16zXOvno9mJUny8zksSYgrCVE6xUubJHEMRC/P
+      e0mccODB/cRNLax/TzendvWzbOvC1xlJQlxOiP75HPaK/SVJ8tYMwCWTJBSmS1TVV+G0Leli
+      +0UBuFiK00WytRdnpeLc3wQGCuM5eo+Ms2xjOzvu20+mvp6VG+fR89NTVMoxaz+whgWLGwAY
+      PnqeqXI1TTUVeh47xaJrlzBvXoaeR0/StHAeG25ewhuelyiiur7q8v1gkoKVVCoc2X6G1Tcu
+      5fBjRxk9n2fd+1Yz2NPLYF+OJe9YxsLVzRQnp9nzg2Nk6mpZuKaRYzvOEZdjNty2ltPPnCRf
+      gs0fXksmMzuxVdVdvDlszu8BxOUyP7t7N/0HR+jbeZrGpR00ZEqM51Ncd8c6csMztMyvBaA0
+      nWf7N/cy2JvjyCPHWXXzKg4+doyhw0Ns+vB6zu06Q6niskxJcy1h3wMHOPJUH0m5TKWSZuO7
+      u+n5yUnO7B2ke20nncsaARg5NcqSd60kmRgjamlh820ryY0WmekfohBV09pey8xk6ZKMcs4D
+      kMpkeM/vbSEDNHY2cmL7KY4928/MVJHeHadYdvNqamrTJEnCs/fsZe2tKymXKqRqIvY9fAiS
+      FCtuWsng3jNk5zeRzXhxR9Jci9jw4fXMm19DKpvlincvYse9h1h5XRctC5vIj46z64HjACxY
+      300mP8nQRMS8+VUc/elx1n/kSnITeUZ6R+nfd5ZcrnhJRjnnAXhJAlTVZFl1wxLaV7bQ2lnP
+      qYOjrN7SQRLHTAzkaOhooG/fOc7uH2JkpMQ7/uVGKJY5/uRxDuweZcuHVoJfzJL0FhKXKzzy
+      P55m6XtW0dycoRKlaV8xj0qxwsTAFCNHBnjmu8e49mNrIU4YOlega1kjja01tK1oo2NRE6Xp
+      S7PcPH3XXXfddUn2/AaSJKFSqZDP59l17klKqQJEEZnqDK1LW+jf209ddxvLNswjU5NlXlcj
+      SbnMrh8c59rbr6RrTRvzV85jxcY2Djx2klU3rSApliCOGemfpHP1fFKv81VpSbrUIiLqyq2M
+      R8MAZLJp6pqyTI0XyY/NkKqpoq42ov/YJFfdtpKehw7T2FZPkoaxvglaFrdQ11JDc2c9de2N
+      TPUOU66qYcWWzkvy62neFquAkjgmnytT2+gNXElvXW9uFVDCzGSB2saaSz6uN/KWuQT0i0Sp
+      lJO/pF8z0ZxO/vA2CYAk6eIzAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      AJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEyAJIUKAMgSYEy
+      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
+      XRs7vrOHcqaGmmovAEnShXjLrQJK4hiIiFIRSRyTEEESc2z3AKu2LiCJE1Lp13YrLsdE6dkv
+      aUnSnHAV0K8mSqVe9Xh2Ok+z+pqu2X97g1/mk8q8NT7MSNLbhbOmJAXKAEhSoAyAJAXKAEhS
+      oAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhS
+      oAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhS
+      oAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhS
+      oAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhS
+      oAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhS
+      oAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhS
+      oAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhS
+      oAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhS
+      oAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXKAEhSoAyAJAXq/wPA
+      0eUA2j/FXAAAAABJRU5ErkJggg==
     </thumbnail>
     <thumbnail height='384' name='Pearce - Blend 3' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAAsTAAALEwEAmpwY
