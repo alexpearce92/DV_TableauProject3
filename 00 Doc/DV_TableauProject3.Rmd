@@ -19,9 +19,9 @@ In this project, we utilize Tableau to blend two tables from Enigma. Our [first 
 
 ### Blend 2
 
-####Description
+####This is a simple blend to display the distribution of education attainment across all households.
 
-<!--![](./example.png)-->
+![](./blend2.png)
 
 ***
 
